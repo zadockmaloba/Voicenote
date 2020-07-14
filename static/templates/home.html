@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% load static %}
+        <title>Voicenote</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen,projection"/>
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                
+              }
+            main {
+                flex: 1 0 auto;
+              }
+            .zmain {
+                height: 60%;
+                min-height: 60%;
+            }
+            .navBg {
+                background-image: url('{% static "imgs/books_1.jpg" %}');
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+            }
+            @keyframes translAnim {
+                from {left: 300px;}
+                to {left: 0px;}
+              } 
+            .anima1 {
+                animation-name: translAnim;
+                animation-duration: 600ms;
+            }
+            .anima2 {
+                animation-name: translAnim;
+                animation-duration: 800ms;
+            }
+            </style>
+    </head>
+    <body >
+      <header>
+        <nav class="nav-extended blue darken-2 anima1  navBg" >
+          <div class=" navbar-fixed">
+            <div class="nav-wrapper blue darken-3 anima1 navBg">
+              <a href="#" class="brand-logo">Voicenote</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <!-- <ul id="nav-mobile" class="right hide-on-med-and-down staggered-list">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+              </ul> -->
+            </div>
+          </div>
+            <div class="nav-content anima2">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1">Home</a></li>
+                <li class="tab"><a class="active" href="#test2">Register</a></li>
+                <li class="tab disabled"><a href="#test3">Login</a></li>
+                <li class="tab"><a href="#test4">FAQs</a></li>
+                <li class="tab"><a href="#test4">Contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+      </header>
+    
+        <main class=" container ">
+            <div class=" row toast center-align blue lighten-4">
+                <h2>Welcome to Voicenote</h2>
+            </div>
+            <div class="row toast">
+              <p>Voicenote is a platform where students request for tailor-made videos on concepts they need more understanding.
+                  Voicenote is also a platform created for Professional tutors; 
+                    where the tutors from a particular institution create their own portal, 
+                    upload videos then invite learners of that institution via a specific link to access the videos; 
+                    and if a student from another institution wants to access the videos from that tutor, 
+                    they will have to before being given access.</p>
+            </div>
+            <button class=" btn-floating">
+              <i class="material-icons">signup</i>
+            </button>
+        </main>
+        <footer class="page-footer blue darken-3 ">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2020 Voicenote Inc. 
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              </div>
+            </div>
+          </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                  document.getElementById("header").style.fontSize = "30px";
+                } else {
+                  document.getElementById("header").style.fontSize = "90px";
+                }
+              }
+        </script>
+    </body>
+</html>
