@@ -5,3 +5,6 @@ from django.http import HttpResponse
 def homepage(request):
     #return HttpResponse("Hello Zadock")
     return render(request,'templates/homepage.html')
+
+def signup(request):
+    return render(request, 'templates/signup.html')
