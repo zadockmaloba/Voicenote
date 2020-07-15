@@ -47,7 +47,7 @@
             </style>
     </head>
     <body class="zmain">
-      <header>
+      <header id="header">
         <nav class="nav-extended blue darken-2 anima1  navBg" >
           <div class=" navbar-fixed">
             <div class="nav-wrapper blue darken-3 anima1 navBg">
@@ -106,9 +106,9 @@
         <script>
             function scrollFunction() {
                 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                  document.getElementById("header").style.fontSize = "30px";
-                } else {
                   document.getElementById("header").style.fontSize = "90px";
+                } else {
+                  document.getElementById("header").style.fontSize = "30px";
                 }
               }
         </script>
