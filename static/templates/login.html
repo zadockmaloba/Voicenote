@@ -1,0 +1,12 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+<div id="mainform" class=" toast blue darken-1 anima2 zmain2" style="flex :1 0 auto;">
+    <form action="validate" method="POST">
+        <input type="text" name="firstname" placeholder="Username">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="password" name="pass" placeholder="password">
+        <input type="submit" class="btn blue">
+    </form>
+</div>
+{% endblock %}

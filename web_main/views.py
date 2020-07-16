@@ -8,3 +8,6 @@ def homepage(request):
 
 def signup(request):
     return render(request, 'templates/signup.html')
+    
+def login(request):
+    return render(request, 'templates/login.html') 
